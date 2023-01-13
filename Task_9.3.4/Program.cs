@@ -9,6 +9,11 @@
             calc += Sum;
 
             calc.Invoke(10, 20);
+
+            Console.WriteLine(new string('-',50));
+            calc -= Sum;
+
+            calc.Invoke(30, 50);
         }
 
         static void Difference (int a, int b)
