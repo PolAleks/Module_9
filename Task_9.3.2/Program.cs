@@ -7,13 +7,13 @@
             return b - a;
         }
 
-        public delegate int Result( int x, int y );
+        delegate int Result( int x, int y );
 
         static void Main(string[] args)
         {
             Result result = Differece;
             Console.WriteLine(result.Invoke(10, 20));
-
+            Console.WriteLine(result(25, 50));
         }
     }
 }
