@@ -5,10 +5,8 @@
         delegate void ShowMessageDelegate(string name);
         static void Main(string[] args)
         {
-            ShowMessageDelegate smd = delegate (string _name)
-            {
-                Console.WriteLine(_name);
-            };
+            ShowMessageDelegate smd = (string _name) => { Console.WriteLine(_name); };
+            
             smd.Invoke("Hello world!");
         }
     }
