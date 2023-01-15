@@ -5,7 +5,7 @@
         delegate int RandomNumberDelegate();
         static void Main(string[] args)
         {
-            RandomNumberDelegate rnd = delegate()
+            RandomNumberDelegate rnd = () => 
             {
                 return new Random().Next(0, 100);
             };
